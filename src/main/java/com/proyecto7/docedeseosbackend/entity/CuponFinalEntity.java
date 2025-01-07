@@ -22,20 +22,50 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CuponFinalEntity {
+    /**
+     * Identificador único del cupón final.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Campo que especifica el remitente del cupón.
+     */
     private String campoDe;
+    /**
+     * Campo que especifica el destinatario del cupón.
+     */
     private String campoPara;
+    /**
+     * Campo que describe lo que incluye el cupón.
+     */
     private String campoIncluye;
+    /**
+     * Fecha en la que se puede cobrar el cupón.
+     */
     private LocalDate fecha;
+    /**
+     * Identificador del cupón relacionado.
+     */
     private Long idCupon;
+    /**
+     * Identificador del usuario al que se asigna el cupón.
+     */
     private Long idUsuario;
+    /**
+     * Identificador de la plantilla asociada al cupón.
+     */
     private Long idPlantilla;
+    /**
+     * Precio final del cupón.
+     */
     private int precioF;
-
+    /**
+     * Relación con la compra a la que pertenece este cupón.
+     * Se mapea mediante una relación muchos a uno con la entidad 'CompraEntity'.
+     */
     @ManyToOne
     @JoinColumn(name = "compra_id")
     @JsonBackReference

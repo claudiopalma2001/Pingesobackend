@@ -38,6 +38,12 @@ public interface UsuarioRepository extends JpaRepository <UsuarioEntity, Long>{
      */
     public List<UsuarioEntity> findByPlanUsuario(String planUsuario);
 
+    /**
+     * Busca una lista de usuarios por su rol.
+     *
+     * @param idRol el identificador del rol.
+     * @return una lista de objetos UsuarioEntity que coinciden con el rol proporcionado.
+     */
     public List<UsuarioEntity> findByIdRol(int idRol);
 
 

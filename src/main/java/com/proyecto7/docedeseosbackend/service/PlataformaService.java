@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con las plataformas.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Plataforma'.
+ */
 @Service
 public class PlataformaService {
 

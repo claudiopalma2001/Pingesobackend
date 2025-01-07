@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+
+/**
+ * Servicio para gestionar las operaciones relacionadas con las plantillas.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Plantilla'.
+ */
 @Service
 public class PlantillaService {
 
@@ -39,7 +44,12 @@ public class PlantillaService {
         return plantilla.orElseThrow(() -> new RuntimeException("Plantilla no encontrada"));
     }
 
-
+    /**
+     * Obtiene plantillas por el ID del cupón.
+     *
+     * @param idCupon el identificador del cupón asociado.
+     * @return una lista de plantillas que coinciden con el ID del cupón proporcionado.
+     */
     public List<PlantillaEntity> getPlantillasByIdCupon(int idCupon) {
         return plantillaRepository.findByIdCupon(idCupon);
     }
@@ -88,6 +98,11 @@ public class PlantillaService {
         }
     }
 
+    /**
+     * Elimina todas las plantillas asociadas a un ID de cupón.
+     *
+     * @param idCupon el identificador del cupón cuyas plantillas se deben eliminar.
+     */
     public void deletePlantillasByIdCupon(int idCupon) {
         List<PlantillaEntity> plantillas = plantillaRepository.findByIdCupon(idCupon);
         plantillaRepository.deleteAll(plantillas);

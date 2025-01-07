@@ -17,11 +17,20 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CuponCompraEntity {
+    /**
+     * Identificador único de la relación entre el cupón y la compra.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Identificador del cupón asociado a la compra.
+     */
     private Long idCupon;
+    /**
+     * Identificador de la compra asociada al cupón.
+     */
     private Long idCompra;
 }

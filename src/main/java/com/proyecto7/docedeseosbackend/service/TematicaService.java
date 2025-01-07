@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con las temáticas.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Tematica'.
+ */
 @Service
 public class TematicaService {
 

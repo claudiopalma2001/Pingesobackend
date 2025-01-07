@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con las compras.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Compra'.
+ */
 @Service
 public class CompraService {
 
@@ -14,41 +18,44 @@ public class CompraService {
     private CompraRepository compraRepository;
 
     /**
-     * Método para encontrar todas las compras en el sistema
-     * @return
+     * Obtiene todas las compras registradas en el sistema.
+     * @return Lista de todas las compras.
      */
-
     public List<CompraEntity> getAllCompras(){
         return compraRepository.findAll();
     }
 
     /**
-     * Método para encontras todas las compras efectuadas por un usuario
-     * @param userId
-     * @return
+     * Obtiene todas las compras realizadas por un usuario específico.
+     * @param userId ID del usuario.
+     * @return Lista de compras efectuadas por el usuario.
      */
     public List<CompraEntity> getAllComprasByUserId(Long userId){
         return compraRepository.findByIdUsuario(userId);
     }
 
+    /**
+     * Obtiene una compra específica por su ID.
+     * @param id ID de la compra.
+     * @return La compra correspondiente al ID proporcionado.
+     */
     public CompraEntity getCompraById(long id) {
         return compraRepository.findById(id).get();
     }
 
     /**
-     * Método para guardar una compra en la base de datos
-     * @param compra
-     * @return
+     * Guarda una nueva compra en la base de datos.
+     * @param compra Objeto de la compra a guardar.
+     * @return La compra guardada.
      */
-
     public CompraEntity save(CompraEntity compra){
         return compraRepository.save(compra);
     }
 
     /**
-     * Método que elimina una compra del sistema a partir de su id
-     * @param id
-     * @return
+     * Elimina una compra del sistema utilizando su ID.
+     * @param id ID de la compra a eliminar.
+     * @return true si la compra fue eliminada con éxito, false en caso contrario.
      */
     public boolean deleteCompra(Long id){
         try {
@@ -61,14 +68,10 @@ public class CompraService {
     }
 
     /**
-     * Método par actualizar Los datos de una compra
-     * @param updatedCompra
-     * @return Compra actualizada
+     * Actualiza los datos de una compra existente.
+     * @param updatedCompra Objeto con los datos actualizados.
+     * @return La compra actualizada.
      */
-
-    /*public CompraEntity updateCompra(CompraEntity compra){
-        return compraRepository.save(compra);
-    }*/
     public CompraEntity updateCompra(CompraEntity updatedCompra) {
         CompraEntity existingCompra = compraRepository.findById(updatedCompra.getId())
                 .orElseThrow(() -> new RuntimeException("Compra no encontrada con ID: " + updatedCompra.getId()));
