@@ -46,7 +46,7 @@ public class CompraService {
     /**
      * Guarda una nueva compra en la base de datos.
      * @param compra Objeto de la compra a guardar.
-     * @return La compra guardada.
+     * @return compra guardada.
      */
     public CompraEntity save(CompraEntity compra){
         return compraRepository.save(compra);
@@ -70,7 +70,7 @@ public class CompraService {
     /**
      * Actualiza los datos de una compra existente.
      * @param updatedCompra Objeto con los datos actualizados.
-     * @return La compra actualizada.
+     * @return Compra actualizada.
      */
     public CompraEntity updateCompra(CompraEntity updatedCompra) {
         CompraEntity existingCompra = compraRepository.findById(updatedCompra.getId())
