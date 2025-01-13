@@ -14,6 +14,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Controlador para manejar las operaciones relacionadas con la compra de cupones.
+ * Proporciona métodos para listar, obtener, guardar y eliminar compras.
+ */
 @RestController
 @RequestMapping("api/v1/compras")
 @CrossOrigin("*")
