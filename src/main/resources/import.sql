@@ -9,53 +9,53 @@ insert into tematicas(nombre_tematica, descripcion) values ('Personalizable','Ha
 insert into tematicas(nombre_tematica, descripcion) values ('Extra','Cupones extra!');
 
 -- Cupones Pololos creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Tu comida favorita','free', 1, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Escapada a la playa','free', 1, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de películas','free', 1, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de fiesta','free', 1, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Paseo en bicicleta','free', 1, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Tu comida favorita','free', 1, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Escapada a la playa','free', 1, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de películas','free', 1, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de fiesta','free', 1, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Paseo en bicicleta','free', 1, 1990);
 
 -- Cupones Familiar creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Día de Trekking','free', 2, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Desayuno en la cama','free', 2, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Elegir el almuerzo','free', 2, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Día de Trekking','free', 2, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Desayuno en la cama','free', 2, 1990);
 
 -- Cupones Infantil creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida con el papá','free', 3, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida con la mamá','free', 3, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de películas','free', 3, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Hacer un experimento','free', 3, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Un cuento antes de...','free', 3, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida con el papá','free', 3, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida con la mamá','free', 3, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Noche de películas','free', 3, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Hacer un experimento','free', 3, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Un cuento antes de...','free', 3, 1990);
 
 -- Cupones Amistad creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Día de spa','free', 4, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Un café conversado','free', 4, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida de shopping','free', 4, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Chofer por un día','free', 4, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Pijamada','free', 4, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Día de spa','free', 4, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Un café conversado','free', 4, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Salida de shopping','free', 4, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Chofer por un día','free', 4, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Pijamada','free', 4, 1990);
 
 -- Cupones Papa creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Lavado de auto','free', 5, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Dormir hasta tarde','free', 5, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Tarde de diversión','free', 5, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('12 abrazos de oso','free', 5, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Masaje en la espalda','free', 5, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Lavado de auto','free', 5, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Dormir hasta tarde','free', 5, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Tarde de diversión','free', 5, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('12 abrazos de oso','free', 5, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Masaje en la espalda','free', 5, 1990);
 
 -- Cupones Embarazada creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Dormir sin que me despierten','free', 6, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Regaloneo especial','free', 6, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Desayuno a la cama','free', 6, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Yo me hago cargo!','free', 6, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Antojo','free', 6, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Dormir sin que me despierten','free', 6, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Regaloneo especial','free', 6, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Desayuno a la cama','free', 6, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Yo me hago cargo!','free', 6, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Antojo','free', 6, 1990);
 
 -- Cupones Personalizable creados
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 1','free', 7, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 2','free', 7, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 3','free', 7, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 4','free', 7, 3000);
-insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 5','free', 7, 3000);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 1','free', 7, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 2','free', 7, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 3','free', 7, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 4','free', 7, 1990);
+insert into cupones(nombre_cupon, tipo, id_tematica, precio) values ('Personalizable 5','free', 7, 1990);
 
 -- Idiomas creados
 insert into idiomas(nombre_idioma) values ('Español');
