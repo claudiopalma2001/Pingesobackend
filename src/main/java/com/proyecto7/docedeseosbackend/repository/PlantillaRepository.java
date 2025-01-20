@@ -47,6 +47,11 @@ public interface PlantillaRepository extends JpaRepository<PlantillaEntity, Long
      */
     List<PlantillaEntity> findByUrlImagen(String url_Imagen);
 
+    /**
+     * Obtiene todas las URLs de imágenes de las plantillas.
+     *
+     * @return una lista con las URLs de imágenes almacenadas en las plantillas.
+     */
     @Query("SELECT p.urlImagen FROM PlantillaEntity p")
     List<String> obtenerUrlsDeImagenes();
 }

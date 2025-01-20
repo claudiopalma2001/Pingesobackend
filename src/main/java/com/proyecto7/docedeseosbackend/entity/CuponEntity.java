@@ -16,14 +16,28 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CuponEntity {
-
+    /**
+     * Identificador único del cupón.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Nombre del cupón.
+     */
     private String nombreCupon;
+    /**
+     * Tipo de cupón, puede representar la categoría o clase del cupón.
+     */
     private String tipo;
+    /**
+     * Identificador temático asociado al cupón.
+     */
     private int idTematica;
+    /**
+     * Precio del cupón.
+     */
     private int precio;
 }

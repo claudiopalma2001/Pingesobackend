@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
+
 /**
  * Clase que representa la entidad 'Tematica' en la base de datos.
  * Contiene los atributos que describen a una tematica y se utiliza
@@ -16,12 +17,21 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TematicaEntity {
-
+    /**
+     * Identificador único de la temática.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
 
+    /**
+     * Nombre de la temática.
+     */
     private String nombreTematica;
+    /**
+     * Descripción de la temática.
+     */
     private String descripcion;
 }

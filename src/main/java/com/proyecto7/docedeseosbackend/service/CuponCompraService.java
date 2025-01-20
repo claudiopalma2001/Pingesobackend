@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con los cupones de compra.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'CuponCompra'.
+ */
 @Service
 public class CuponCompraService {
 

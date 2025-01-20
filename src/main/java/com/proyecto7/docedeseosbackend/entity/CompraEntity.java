@@ -22,15 +22,33 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CompraEntity {
+
+    /**
+     * Identificador único de la compra.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
 
+    /**
+     * Identificador del usuario que realizó la compra.
+     */
     private Long idUsuario;
+    /**
+     * Fecha en la que se realizó la compra.
+     */
     private LocalDate fechaCompra;
+    /**
+     * Monto total de la compra.
+     */
     private float montoTotal;
-
+    /**
+     * Lista de cupones finales asociados a la compra.
+     * Se define una relación uno a muchos con la entidad 'CuponFinalEntity'.
+     * Los cupones se eliminan en cascada si la compra es eliminada.
+     */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "compra", orphanRemoval = true)
     @JsonManagedReference
     private List<CuponFinalEntity> cuponesFinales;

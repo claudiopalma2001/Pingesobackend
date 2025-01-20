@@ -7,6 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con los roles.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Rol'.
+ */
 @Service
 public class RolService {
 

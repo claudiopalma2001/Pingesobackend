@@ -18,11 +18,16 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RolEntity {
-
+    /**
+     * Identificador único del rol.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Nombre del rol asignado al usuario.
+     */
     private String nombreRol;
 }

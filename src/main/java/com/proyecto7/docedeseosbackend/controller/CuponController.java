@@ -129,15 +129,7 @@ public class CuponController {
      * @param idCupon el identificador del cupón a eliminar.
      * @return una respuesta con el estado de la operación.
      */
-    /*@DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCupon(@PathVariable Long id) {
-        try {
-            boolean deleted = cuponService.deleteCupon(id);
-            return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().build();
-        }
-    }*/
+
     @DeleteMapping("/{idCupon}")
     public ResponseEntity<Void> deleteCuponById(@PathVariable int idCupon) {
         try {

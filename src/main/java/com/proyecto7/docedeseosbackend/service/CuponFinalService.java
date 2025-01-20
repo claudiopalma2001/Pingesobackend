@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con los cupones finales.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'CuponFinal'.
+ */
 @Service
 public class CuponFinalService {
 
@@ -124,6 +128,13 @@ public class CuponFinalService {
         }
     }
 
+    /**
+     * Actualiza el precio de un cupón final por su ID.
+     * @param id ID del cupón final.
+     * @param nuevoPrecioF Nuevo precio del cupón final.
+     * @return Cupón final actualizado con el nuevo precio.
+     * @throws Exception Si el cupón no se encuentra.
+     */
     public CuponFinalEntity updatePrecio(Long id, int nuevoPrecioF) throws Exception {
         Optional<CuponFinalEntity> existingCupon = cuponFinalRepository.findById(id);
         if (existingCupon.isPresent()) {
@@ -135,6 +146,11 @@ public class CuponFinalService {
         }
     }
 
+    /**
+     * Obtiene una lista de cupones finales por una lista de IDs.
+     * @param ids Lista de IDs de los cupones finales.
+     * @return Lista de cupones finales correspondientes a los IDs proporcionados.
+     */
     public List<CuponFinalEntity> getCuponesFinalesByIds(List<Long> ids) {
         return cuponFinalRepository.findAllById(ids);
     }

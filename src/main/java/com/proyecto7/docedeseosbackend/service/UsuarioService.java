@@ -13,6 +13,10 @@ import org.sql2o.Sql2o;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Servicio para gestionar las operaciones relacionadas con los usuarios.
+ * Proporciona métodos para realizar operaciones CRUD sobre la entidad 'Usuario'.
+ */
 @Service
 public class UsuarioService {
 
@@ -154,6 +158,11 @@ public class UsuarioService {
         return new Login(true, jwt);
     }
 
+    /**
+     * Guarda un nuevo usuario directamente en la base de datos usando SQL.
+     * @param usuario La entidad de usuario a guardar.
+     * @return El usuario guardado o null si falla la operación.
+     */
     public UsuarioEntity saveUsuario(UsuarioEntity usuario) {
         try (Connection conn = sql2o.open()) {
             String sql = "INSERT INTO usuarios (nombre, correo, password, edad, plan_usuario, id_rol) " +

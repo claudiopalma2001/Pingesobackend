@@ -18,10 +18,16 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlataformaEntity {
+    /**
+     * Identificador único de la plataforma.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Tipo de plataforma asociada al sistema.
+     */
     private String tipoPlataforma;
 }

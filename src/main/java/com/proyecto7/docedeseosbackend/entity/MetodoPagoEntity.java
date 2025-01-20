@@ -17,12 +17,20 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MetodoPagoEntity {
-
+    /**
+     * Identificador único del método de pago.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Nombre del método de pago.
+     */
     private String nombreMetodo;
+    /**
+     * Identificador asociado al pago.
+     */
     private int idPago;
 }

@@ -16,11 +16,16 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class IdiomaEntity {
-
+    /**
+     * Identificador único del idioma.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Nombre del idioma.
+     */
     private String nombreIdioma;
 }

@@ -21,14 +21,28 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlantillaEntity {
-
+    /**
+     * Identificador único de la plantilla.
+     * Se genera automáticamente mediante la estrategia de identidad.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
-
+    /**
+     * Identificador del cupón asociado a la plantilla.
+     */
     private int idCupon;
+    /**
+     * Identificador del idioma asociado a la plantilla.
+     */
     private int idIdioma;
+    /**
+     * Identificador de la plataforma asociada a la plantilla.
+     */
     private int idPlataforma;
+    /**
+     * URL de la imagen asociada a la plantilla.
+     */
     private String urlImagen;
 }
